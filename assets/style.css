@@ -31,7 +31,6 @@ h1, h2, h3 {
     color: rgb(43, 250, 71);
 }
 
-
 h1 {
     font-size: 30px;
     line-height: 49px;
@@ -220,6 +219,36 @@ input[type=submit] {
     cursor: pointer;
 }
 
-@media screen (max-width:  980px, 768px, 640px;){
-  
+
+
+/* @media query 980px, 768px, 640px */
+
+@media  screen and (max-width: 768px) /*and (max-width:980px)*/
+{
+/* no needed modifications */
+}
+@media  screen and (max-width: 640px) /*and (max-width:768px)*/
+{
+.masterheader{ width: 100%;}
+.sidebar {float: left;
+    max-width: 650px;
+    text-align: center;
+    }
+.social {float: none;}     
+.container { text-align: center;}
+
+}
+@media  screen and (max-width: 640px) 
+{
+    .masterheader{ width: 100%;}
+    #logo {width:100%;}
+    .sidebar {float: left;
+        max-width: 650px;
+        text-align: center;
+        }
+    .social {float: none;}     
+    .container { text-align: center;}
+    nav {width: 100%;
+    padding: 0;}
+    nav :first-child {padding-left: 30px;}
 }
